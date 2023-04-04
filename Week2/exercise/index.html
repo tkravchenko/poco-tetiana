@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms and Inputs</h1>
+
+    <form action="" method="post">
+
+        <label for="text">Text Input</label>
+        <input type="text" id="text" required>
+
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name = "" id="password">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>The Submit Button</h3>
+
+    <form action="">
+        <label for="fname">First name:</label> <br>
+        <input type="text" id="fname" name="fname" placeholder="e.g. John" required autocomplete="on"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="e.g. Doe" required autocomplete="on"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>
+        If you click the "Submit" button, the form data will be sent to a form ...
+    </p>
+
+    <h3>Radio Buttons</h3>
+
+    <p>Choose your favourite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_laanguage" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="fav_laanguage" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="js" name="fav_laanguage" value="JS">
+        <label for="js">JS</label><br>
+    </form>
+
+
+    <h3>Checkboxes</h3>
+
+    <p>What kind of transport do you have?</p>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1">
+        <label for="vehicle1">I have a bike</label><br>
+
+        <input type="checkbox" id="vehicle2" name="vehicle2">
+        <label for="vehicle2">I have a car</label><br>
+
+        <input type="checkbox" id="vehicle3" name="vehicle3">
+        <label for="vehicle3">I have a boat</label><br>
+    </form>
+
+    <h3>The Select Element - drop-down list</h3>
+
+    <form>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        <textarea name="message" rows="10" cols="30">
+            Put your text here.
+        </textarea><br>
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+    </form>
+
+    <h3>The Fieldset and legend Elements</h3>
+
+    <form action="">
+        <fieldset>
+            <legend>Personal info:</legend>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <h3>The datalist Element</h3>
+
+    <p>
+        The datalist element specifies a list of pre-defined options for an input element.
+    </p>
+
+    <form action="">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <input type="button" value="Submit">
+    </form>
+
+    <h3>HTML Input Types</h3>
+    <h3>Password</h3>
+
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="text" id="pwd" name="pwd"><br><br>
+
+        <input type="button" value="Submit">
+    </form>
+
+    <h3>Submit</h3>
+
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Colour</h3>
+
+    <form action="">
+        <label for="favcolour">Select your favourite colour:</label>
+        <input type="color" id="favcolor" name="favcolor">
+
+        <input type="button" value="Submit">
+    </form>
+
+    <h3>Date</h3>
+
+    <p>
+        The input type="date" is used for input fields that should contain a date.
+    </p>
+
+    <form action="">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>
+        You can also use the min and max attributes to add restrictions to dates:
+    </p>
+
+    <form action="">
+        <label for="datemax">Enter a date before 1980-01-01</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <label for="datemin">Enter a date after 2000-01-01</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+    </form>
+
+    <h3>Email</h3>
+
+    <form action="">
+        <label for="email">Enter your email:</label>
+        <input type="email"id="email" name="email">
+    </form>
+
+    <h3>File upload</h3>
+
+    <p>
+        Show a file-select field which allows a file to be chosen for upload:
+    </p>
+
+    <form action="">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Number Field</h3>
+    <p>
+        The input type="number" defines a numeric input field.
+
+        You can use the min and max attributes to add numeric restrictions in the input field:
+    </p>
+    <form action="">
+        <label for="quantity">Quantity(between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Range Field</h3>
+
+    <p>
+        Depending on browser support: The input type "range" can be displayed as a slider control.
+    </p>
+
+    <form action="">
+        <label for="vol">Volume(between 0 and 50):</label>
+        <input type="range" name="vol" id="vol" min="0" max="50">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Time</h3>
+
+    <form action="">
+        <label for="appt">Select a time:</label>
+        <input type="time" name="appt" id="appt">
+    </form>
+
+    <h3>Url</h3>
+
+    <form action="">
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" name="homepage" id="homepage"> 
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>The size attribute</h3>
+
+    <p>
+        he size attribute specifies the width (in characters) of an input field:
+    </p>
+
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname" size="50"><br>
+
+        <label for="pin">PIN:</label><br>
+        <input type="text" name="pin" id="pin" size="4"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>The input placeholder attribute</h3>
+
+    <p>
+        The placeholder attribute specifies a short hint that describes the expected value of an input field.
+    </p>
+
+    <form action="">
+        <label for="tel">Enter a phone number:</label>
+        <input type="tel" name="tel" id="tel" placeholder="+41-79-222-33-66"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>The autofocus attribute</h3>
+
+    <p>
+        The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+    </p>
+
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required autofocus><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
