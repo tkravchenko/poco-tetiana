@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Task 2-->
+
+    <h2>Task 2</h2>
+
+    <p>
+        Create the semantic HTML of this form layout.<br>
+        Make sure, the code is valid. Is there something you would optimize according to best practice? Add it in the comments what you would change and why.
+    </p>
+
+    <h2>Profil</h2>
+
+    <h3>Hier können Sie Ihre Adress-Angaben einsehen und apassen.</h3>
+
+    <form action="" method="post">
+        <fieldset>
+
+            <legend>Persönliche Daten</legend>
+
+            <label for="titel">Titel</label>
+            <input type="text" name="titel" id="titel" placeholder="Dr. hc" required><br><br>
+
+            <label for="vname">Vorname</label>
+            <input type="text" name="vname" id="vname" placeholder="Peter" required><br><br>
+
+            <label for="nname">Nachname</label>
+            <input type="text" name="nname" id="nname" placeholder="Muster" required><br><br>
+
+            <label for="geschlecht">Geschlecht</label>
+            <input list="geschlecht">
+            <datalist id="geschlecht">
+                <option value="W">
+                <option value="M">
+            </datalist><br><br>
+
+            <label for="">Sprache</label>
+            <input list="sprache">
+            <datalist id="sprache">
+                <option value="DE">
+                <option value="FR">
+                <option value="IT">
+            </datalist>
+    
+        </fieldset><br>
+
+        <fieldset>
+
+            <legend>Kontaktdaten</legend>
+
+            <label for="tel">Telefon</label>
+            <input type="tel" name="tel" id="tel" required><br><br>
+
+            <label for="mob">Mobile</label>
+            <input type="tel" name="mob" id="mob" placeholder="optinal"><br><br>
+
+            <label for="mainnum">Hauptnummer</label>
+            <input type="tel" name="mainnum" id="mainnum" placeholder="optinal"><br><br>
+
+            <label for="fax">Fax</label>
+            <input type="tel" name="fax" id="fax" placeholder="optional"><br><br>
+
+            <label for="email1">Mail 1</label>
+            <input type="email" name="email1" id="email1" required><br><br>
+
+            <label for="email2">Mail 2</label>
+            <input type="email" name="email2" id="email2" placeholder="optional">
+        </fieldset><br>
+
+        <fieldset>
+
+            <legend>Adressdaten</legend>
+
+            <label for="firma">Firma</label>
+            <input type="text" name="firma" id="firma" required><br><br>
+
+            <label for="addfirma">Zusatz Firma</label>
+            <input type="text" name="addfirma" id="addfirma" placeholder="optional"><br><br>
+
+            <label for="homepage">Homepage</label>
+            <input type="url" name="homepage" id="homepage"><br><br>
+
+            <label for="address">Adresse / Haus Nr</label>
+            <input type="text" name="address" id="address" placeholder="Musterstrasse" required>
+            <input type="number" name="address" id="address" placeholder="33" required><br><br>
+
+            <label for="addaddress">Zusatz Adresse</label>
+            <input type="text" name="addaddress" id="addaddress" placeholder="optional"><br><br>
+
+            <label for="postfach">Postfach</label>
+            <input type="text" name="postfach" id="postfach" placeholder="optional"><br><br>
+
+            <label for="plzandort">PLZ / Ort</label>
+            <input type="number" name="plzandort" id="plzandort" placeholder="8800" required>
+            <input type="text" name="plzandort" id="plzandort" placeholder="Musterstadt" required><br><br>
+
+            <label for="cantonandcountry">Kanton / Land</label>
+            <input type="text" name="cantonandcountry" id="cantonandcountry" placeholder="ZH" required>
+            <input type="text" name="cantonandcountry" id="cantonandcountry" placeholder="Schweiz" required>
+
+        </fieldset><br><br>
+
+        <input type="button" value="Speichern">
+        
+    </form>
+    
+</body>
+</html>
