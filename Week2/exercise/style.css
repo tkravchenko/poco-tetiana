@@ -4,8 +4,8 @@ h1 { /*declaration from {} */
     height: 20rem;
     width: 100%;
     font-size: 18 px; /*2em / vw-view port weight / vh-view port height / ch-character / auto*/
-    font-family:auto
-    position:auto
-    text-decoration:auto
-    display:
-} /* CSS rule */
+    font-family:auto;
+    position:auto;
+    text-decoration:auto;
+    display:grid;
+ /* CSS rule */
