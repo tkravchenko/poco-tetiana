@@ -1,0 +1,39 @@
+p {
+    background-color: brown;
+    margin: 10px 5px 3px 5px; /* clockwise order: top right bottom left */
+    margin: 10px 15px; /* top/bottom right/left */
+    margin: 15px; /*on all sides */
+    margin-top: 10px;
+}
+
+html { /*Best practice */
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+p .margin {
+    margin-left: auto;
+    margin-right: 0.5rem;
+    width: 50%;
+    border: 1px solid #ff0000;
+}
+
+a {
+    display: block; /* block-level element */
+}
+
+h1 {
+    display: inline; /* inline element, will break at end of line */
+}
+
+li {
+    display: inline-block; /* appears inline, does not break across lines */
+}
+
+#footer {
+    display: none; /* hidden */
+}
+
