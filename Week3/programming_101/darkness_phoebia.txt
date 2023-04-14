@@ -1,0 +1,64 @@
+Task
+
+One family wants to get through a tunnel. Dad can make it in 1 minute, mama in 2 minutes, son in 4 and daughter in 5 minutes. 
+Unfortunately, not more than two persons can go through the narrow tunnel at one time, moving at the speed of the slower one.
+Can they all make it to the other side if they have a torch that lasts only 12 minutes and they are afraid of the dark?
+
+Solution
+
+GetThroughTheTunnel
+
+    Initialization step:
+    maxTime = 12;
+    totalTime = 0;
+    peopleLeft = 4;
+    datTime = 1;
+    momTime = 2;
+    sonTime = 4;
+    daughterTime = 5;
+
+    Sorting time per person to find fastest and slowest:
+    SortTimePerPerson() => result:array sortedTimePerPerson[] = [1, 2, 4, 5]
+
+    SelectTwoFastest(): numbers from  fastestArray[] sortedTimePerPerson[] with index less then 2=> sortedTimePerPerson[0], sortedTimePerPerson[1]
+    SelectTwoSlowest(): numbers from  slowestArray[] sortedTimePerPerson[] with index grater then 1 slowestArray[] => sortedTimePerPerson[2], sortedTimePerPerson[3]
+
+    Creat function time per pair:
+    TimePerPair(time1, time2):
+        return max(time1, time2)
+
+    Going through tunnel:
+    
+    Step 1: 2 fastest are going
+        totalTime = totalTime + TimePerPair(fastestArray[0], fastestArray[1]);
+        peopleLeft = peopleLeft - 2;
+
+    Step 2: fastest is going back
+        totalTime = totalTime + fastestArray[0];
+        peopleLeft = peopleLeft + 1;
+
+    Step 3: 2 slowest are going
+        totalTime = totalTime + TimePerPair(slowestArray[0], slowestArray[1]);
+        peopleLeft = peopleLeft - 2
+
+    Step 4: fastest is going back
+        totalTime = totalTime + fastestArray[1];
+        peopleLeft = peopleLeft + 1;
+
+    Step 4: 2 fastest are going 
+        totalTime = totalTime + TimePerPair(fastestArray[0], fastestArray[1]);
+        peopleLeft = peopleLeft - 2;
+
+    Check if all the requirments are met:
+    If ((totalTime <= maxTime) && (peopleLeft == 0))
+        print("Success! You all made it!);
+    Else
+        print("It's a pity, you didn't make it. Try again!");
+    End If
+
+End GetThroughTheTunnel
+
+
+
+
+    
