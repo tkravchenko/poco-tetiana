@@ -135,9 +135,11 @@ Report the result to the screen (e.g. "2 is even"). */
 
 let num = +(prompt("Enter a number between 0 and 20, e.g. 2"));
 
-if((num < 0) || (num > 20)){
-    alert("Please check that a number is between 0 and 20");
-}else if(num%2 === 0){
+while((isNaN(num)) || (num < 0) || (num > 20)){
+    num = +(prompt("Make sure to write a number between 0 and 20"));
+}
+
+if(num%2 === 0){
     console.log(`${num} is even`);
 }else {
     console.log(`${num} is odd`);
