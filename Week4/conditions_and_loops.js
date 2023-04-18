@@ -95,43 +95,33 @@ while(isNaN(birthYear1) || birthYear1.toString().length !== 4){
 /*Task 6
 Translate days of the week*/
 
-let dayOfTheWeek = prompt("Plese enter day of the week in English, e.g. Monday:");
-dayOfTheWeek = dayOfTheWeek.toLowerCase();
-console.log(dayOfTheWeek);
+let dayOfTheWeek = prompt("What week day is today, e.g. Monday:");
 
-
-switch(dayOfTheWeek){
+//check for 3 first letters as a next step
+switch(dayOfTheWeek.toLowerCase){
     case "monday":
         dayOfTheWeek = "Montag";
-        console.log(dayOfTheWeek);
         break;
     case "tuesday":
         dayOfTheWeek = "Dienstag";
-        console.log(dayOfTheWeek);
         break;
     case "wednesday":
         dayOfTheWeek = "Mittwoch";
-        console.log(dayOfTheWeek);
         break;
     case "thursday":
         dayOfTheWeek = "Donnerstag";
-        console.log(dayOfTheWeek);
         break;
     case "friday":
         dayOfTheWeek = "Freitag";
-        console.log(dayOfTheWeek);
         break;
     case "saturday":
         dayOfTheWeek = "Samstag";
-        console.log(dayOfTheWeek);
         break;
     case "sunday":
         dayOfTheWeek = "Sontag";
-        console.log(dayOfTheWeek);
         break;
     default:
-        alert("Please enter a day of the week in format: Monday");
-        dayOfTheWeek = prompt("Plese enter day of the week in English, e.g. Monday:");
+        alert("Dieser Tag ist unbekannt.");
 }
 
 console.log(`Heute ist ${dayOfTheWeek}.`)
@@ -143,10 +133,10 @@ Prompt for a number between 0 and 20.
 Check if the given number is even or odd.
 Report the result to the screen (e.g. "2 is even"). */
 
-let num = parseInt(prompt("Enter a number between 0 and 20, e.g. 2"));
+let num = +(prompt("Enter a number between 0 and 20, e.g. 2"));
 
 if((num < 0) || (num > 20)){
-    alert("Please check that  a number is between 0 and 20");
+    alert("Please check that a number is between 0 and 20");
 }else if(num%2 === 0){
     console.log(`${num} is even`);
 }else {
@@ -166,5 +156,31 @@ for(let num = 0; num < 21; num++){
     }else{
         console.log(`${num} is odd`);
     }
+}
+
+/*Task 9
+Multiplication tables
+Prompt for a number between 0 and 10.
+Multiply the given number by 9.
+Log the result (e.g. "2 * 9 = 18").*/
+
+let num = +(prompt("Enter a number between 0 and 10:"));
+let multiplication;
+if((num < 0) || (num > 10)){
+    alert("Please check that  a number is between 0 and 10");
+}else{
+    multiplication = num * 9;
+    console.log(`${num} * 9 = ${multiplication}`)
+}
+
+/*Task 10
+Multiplication tables 2.0
+Write a for loop that will iterate from 0 to 10.
+For each iteration of the for loop, it will multiply the number by 9.
+Log the result (e.g. "2 * 9 = 18").*/
+
+for(let num = 0; num < 11; num++){
+    let multiplication = num * 9;
+    console.log(`${num} * 9 = ${multiplication}`)
 }
 
