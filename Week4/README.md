@@ -14,6 +14,9 @@ logical not !before
 isNaN - negative conditions you need ||
 if positive logical conditions &&
 
+Userbilaty
+--constraints
+
 **Debugging**
 console.log("Is often used for debugging");
 debugger; // stops the execution of JavaScript, like setting a breakpoint
