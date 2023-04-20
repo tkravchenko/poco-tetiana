@@ -55,7 +55,7 @@ Arrays, objects */
 
 //arrays
 
-const groseries = ["Bananas", "Pasta", "Milk"];
+const groceries = ["Bananas", "Pasta", "Milk"];
 const numbers = [1, 2, 5, 6];
 const mixItUp = [1, "string", true]; // best practice to have the same data type;
 
@@ -71,7 +71,7 @@ console.log(groceries[1]);
 
 // objects
 
-console.table(groseries);
+console.table(groceries);
 
 const groceryItem = {
     item: "Banana",
