@@ -13,6 +13,10 @@
 //create an array
 let fruits = ["Banana", "Apples", "Oranges", "Bluberries"];
 
+//anoter way using anonyms function
+item = fruits.find(fruit => (fruit === "Oranges"))
+console.log(item);
+
 // Access and output Oranges
 for(let i = 0; i < fruits.length; i++){
     if(fruits[i] === "Oranges"){
