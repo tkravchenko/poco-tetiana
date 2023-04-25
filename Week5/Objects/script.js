@@ -64,3 +64,82 @@ images.forEach(image => {
 */
 
 //Task 2
+ myArr = [];
+ myArr[0] = null; //delate th object set it to null
+ delate myArr[0].city // to delate the key:value pair in the
+
+ myArr.forEach(person => {
+
+ });
+
+ function addPerson(name, age, eyeColor, img, city){
+    let newObj = {
+        name: name,
+        age: age,
+        eyeColor: eyeColor,
+        img: img,
+        city: city
+    };
+    myArr.push(newObj);
+ };
+
+ addPerson("Linus", 32, "blue", "", "St. Gallen");
+
+ let tiger = {
+    claws: true,
+    color: "black and yellow",
+    feet: 4,
+    type: "mammal",
+    foodPreference: "meat",
+    giveSound: ()=>{console.log("ROOOAAAR")}
+ }
+
+ let cat = {
+    claws: true,
+    color: "various,
+    feet: 4,
+    type: "mammal",
+    foodPreference: "meat",
+    giveSound: ()=>{console.log("miau")}
+ }
+
+ let goose = {
+    claws: false
+    color: "various",
+    feet: 2,
+    type: "bird",
+    foodPreference: "fish",
+    giveSound: ()=>{console.log("quack")}
+ }
+
+ let fly = {
+    claws: false,
+    color: "black ,
+    feet: 6,
+    type: "insect",
+    foodPreference: "unknown",
+    giveSound: ()=>{console.log("bzzzz")} //to declare a method inside an object
+ };
+
+ //object constructor:capitalize best practice; like a function to create as many object as you want
+ const Animal = function(name, laws, color, feet, type, foodPreference, sound){
+    this.name = name;
+    this.claws = claws;
+    this.color = color;
+    this.feet = feed;
+    this.type = type;
+    this.foodPreference = foodPreference;
+    this.giveSound = () => { console.log(sound)}
+ };
+
+ let spider = new Animal(false, "black", 8, "archanid", "flies", "tap tap tap");
+ console.log("spider");
+ console.log(spider.giveSound());
+
+
+ function Person(name, age, eyeColor, img, city){
+    this.name = name;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    //...
+ }
