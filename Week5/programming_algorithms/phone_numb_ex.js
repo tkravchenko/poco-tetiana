@@ -27,12 +27,3 @@ function isValidNumber(phoneNumber) {
     }
     return isValid;
 };
-
-
-
-///
-let phoneNumber = "";
-
-phoneNumber = prompt("Please enter your phonr number, e.g. 079 879 9236.");
-phoneNumber = phoneNumber.replace(" ", "");
-console.log(phoneNumber);
