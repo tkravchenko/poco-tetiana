@@ -1,0 +1,11 @@
+Input: current age, age you want to retire
+Output: years left to retirment, retirment year.
+
+Constraints: input number, retirment age > current age 
+
+Algorithm:
+1. Prompt for current age, retirment age. Save as a number.
+2. Find out which year is now using Date.
+3. Calculate how many years are left untill retirment: retirmnetAge - currentAge
+4. Calculate the retirment year: currentYear, yearsLeft.
+5. Output the results.
