@@ -1,0 +1,26 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* flex
+ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+*/
+ul {
+    display: grid;
+    list-style: none;
+    gap: 10 px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1 fr));
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
